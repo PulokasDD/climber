@@ -47,6 +47,8 @@ document.addEventListener('keydown', (event) => {
     }
     input.value = '';
   } else if (event.key === 'z' || event.key === 'я') {
+    input.setAttribute('style', 'visibility: visible;');
+    button.setAttribute('style', 'visibility: visible;');
     checkPoints[counter - 1].appendChild(climber);
     counter -= 1;
     question.innerText = arrQuestions[counter];

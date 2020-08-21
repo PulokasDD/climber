@@ -22,8 +22,6 @@ button.addEventListener('click', () => {
     question.innerText = `THAT'S RIGHT! PRESS "X" FOR NEXT QUESTION 😉`;
     checkPoints[counter + 1].appendChild(climber);
     counter += 1;
-    input.setAttribute('style', 'visibility: hidden;');
-    button.setAttribute('style', 'visibility: hidden;');
   } else {
     question.innerText = 'WRONG ANSWER 🙃 PRESS "X" TO TRY AGAIN';
     input.setAttribute('style', 'visibility: hidden;');

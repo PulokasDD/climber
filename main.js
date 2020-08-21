@@ -27,23 +27,29 @@ button.addEventListener('click', () => {
   }
   if (counter >= 6) {
     flag.setAttribute('style', 'visibility: visible;');
+    input.setAttribute('style', 'visibility: hidden;');
+    button.setAttribute('style', 'visibility: hidden;');
     question.innerText = 'YOU WIN! 👍';
   }
 });
 
 document.addEventListener('keydown', (event) => {
-  if (event.key === 'x') {
+  if (event.key === 'x' || event.key === 'ч') {
     question.innerText = arrQuestions[counter];
+    input.setAttribute('style', 'visibility: visible;');
+    button.setAttribute('style', 'visibility: visible;');
     if (inputValue === arrAnswers[counter]) {
       question.innerText = arrQuestions[counter];
     }
     input.value = '';
-  } else if (event.key === 'z') {
+  } else if (event.key === 'z' || event.key === 'я') {
     checkPoints[counter - 1].appendChild(climber);
     counter -= 1;
     question.innerText = arrQuestions[counter];
   }
   if (counter >= 6) {
     question.innerText = 'YOU WIN! 👍';
+    input.setAttribute('style', 'visibility: hidden;');
+    button.setAttribute('style', 'visibility: hidden;');
   }
 });

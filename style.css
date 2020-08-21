@@ -114,6 +114,7 @@ body {
   z-index: 1;
 }
 .input {
+  visibility: hidden;
   width: 150px;
   height: 30px;
   margin: 15px;
@@ -121,6 +122,7 @@ body {
   border-radius: 5px;
 }
 .btn {
+  visibility: hidden;
   margin: 5px;
   padding: 5px;
   font-weight: bold;

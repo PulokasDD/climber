@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/bg.jpg);
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.main {
+  justify-content: flex-end;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#mountain {
+  width: 2500px;
+}
+#climber {
+  width: 55px;
+}
+#flag {
+  width: 100px;
+  height: 90px;
+  visibility: hidden;
+  position: absolute;
+  display: inline;
+  left: -46px;
+  bottom: 15px;
+}
+.check-point-0 {
+  position: absolute;
+  background-color: red;
+  bottom: 85px;
+  left: 130px;
+  width: 40px;
+  height: 6px;
+}
+.check-point-1 {
+  position: absolute;
+  background-color: red;
+  bottom: 150px;
+  left: 280px;
+  width: 40px;
+  height: 6px;
+}
+
+.check-point-2 {
+  position: absolute;
+  background-color: red;
+  bottom: 300px;
+  left: 420px;
+  width: 40px;
+  height: 6px;
+}
+.check-point-3 {
+  position: absolute;
+  background-color: red;
+  bottom: 427px;
+  left: 530px;
+  width: 40px;
+  height: 6px;
+}
+.check-point-4 {
+  position: absolute;
+  background-color: red;
+  bottom: 440px;
+  left: 755px;
+  width: 40px;
+  height: 6px;
+}
+
+.check-point-4 {
+  position: absolute;
+  background-color: red;
+  bottom: 440px;
+  left: 755px;
+  width: 40px;
+  height: 6px;
+}
+
+.check-point-5 {
+  position: absolute;
+  background-color: red;
+  bottom: 510px;
+  left: 890px;
+  width: 40px;
+  height: 6px;
+}
+
+.check-point-6 {
+  position: absolute;
+  background-color: red;
+  bottom: 650px;
+  left: 1060px;
+  width: 40px;
+  height: 6px;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 400px;
+  height: 250px;
+  background: orange;
+  margin: 40px;
+  border: 2px solid black;
+  border-radius: 20px;
+  z-index: 1;
+}
+.input {
+  width: 150px;
+  height: 30px;
+  margin: 15px;
+  font-size: large;
+  border-radius: 5px;
+}
+.btn {
+  margin: 5px;
+  padding: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.question {
+  margin: 40px 10px 35px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+}

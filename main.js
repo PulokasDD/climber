@@ -16,7 +16,7 @@ const arrAnswers = ['6', '11', 'ottawa', '1995', '1', '1'];
 let inputValue = '';
 let counter = 0;
 
-button.addEventListener('click', () => {
+function answer() {
   inputValue = input.value.toLowerCase();
   if (inputValue === arrAnswers[counter]) {
     question.innerText = `THAT'S RIGHT! PRESS "X" FOR NEXT QUESTION 😉`;
@@ -35,6 +35,10 @@ button.addEventListener('click', () => {
     button.setAttribute('style', 'visibility: hidden;');
     question.innerText = 'YOU WIN! 👍';
   }
+}
+
+button.addEventListener('click', () => {
+  answer();
 });
 
 document.addEventListener('keydown', (event) => {
@@ -57,5 +61,8 @@ document.addEventListener('keydown', (event) => {
     question.innerText = 'YOU WIN! 👍';
     input.setAttribute('style', 'visibility: hidden;');
     button.setAttribute('style', 'visibility: hidden;');
+  }
+  if (event.key === 'Enter') {
+    answer();
   }
 });

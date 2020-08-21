@@ -24,6 +24,8 @@ button.addEventListener('click', () => {
     counter += 1;
   } else {
     question.innerText = 'WRONG ANSWER 🙃 PRESS "X" TO TRY AGAIN';
+    input.setAttribute('style', 'visibility: hidden;');
+    button.setAttribute('style', 'visibility: hidden;');
   }
   if (counter >= 6) {
     flag.setAttribute('style', 'visibility: visible;');
